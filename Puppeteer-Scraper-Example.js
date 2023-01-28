@@ -18,10 +18,10 @@ import puppeteer from 'puppeteer';
         document.querySelector('#qty').value = 10;
     });
 
-    // Wait and click on the letters radio
-    const letterButtonSelector = '#word_length';
-    await page.waitForSelector(letterButtonSelector);
-    await page.click(letterButtonSelector);
+    // Wait and click on the letters radio button
+    const lettersRadioButtonSelector = '#word_length';
+    await page.waitForSelector(lettersRadioButtonSelector);
+    await page.click(lettersRadioButtonSelector);
 
     // Wait and click on the generator button
     const generatorWordsSelector = '#options > div:nth-child(4) > div > input.btn.btn-primary';
